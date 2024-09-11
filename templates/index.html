@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenido a Nuestro Sistema de Recomendación</h1>
+        <nav>
+            <a href="login.html">Iniciar Sesión</a>
+            <a href="preferencias.html">Seleccionar Preferencias</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Productos Recomendados</h2>
+        <div id="productos">
+            {% if productos %} 
+                {% for producto in productos %}
+                <div class="producto">
+                    <h3>{{ producto['nombre_producto'] }}</h3>
+                    <img src="/images/{{ producto['nombre_producto'].lower().replace(' ', '_') }}.jpg" alt="{{ producto['nombre_producto'] }}">
+                    <p>Precio: ${{ producto['precio'] }}</p>
+                    <button class="cta">
+                        <span class="hover-underline-animation">Ver Detalles</span>
+                        <svg
+                            id="arrow-horizontal"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="30"
+                            height="10"
+                            viewBox="0 0 46 16"
+                        >
+                            <path
+                                id="Path_10"
+                                data-name="Path 10"
+                                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                transform="translate(30)"
+                            ></path>
+                        </svg>
+                    </button>
+                </div>
+                {% endfor %} 
+            {% else %}
+                <p>No hay productos disponibles.</p>
+            {% endif %}
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tu Empresa de Comercio Electrónico</p>
+        <a href="preferencias.html">Volver a Preferencias</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Iniciar Sesión</h1>
+    </header>
+    <main>
+        <form action="/login" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="cta">
+                <span class="hover-underline-animation">Iniciar Sesión</span>
+                <svg
+                    id="arrow-horizontal"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="10"
+                    viewBox="0 0 46 16"
+                >
+                    <path
+                        id="Path_10"
+                        data-name="Path 10"
+                        d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                        transform="translate(30)"
+                    ></path>
+                </svg>
+            </button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tu Empresa de Comercio </p>
+    </footer>
+</body>
+
+</html>

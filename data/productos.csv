@@ -1,0 +1,6 @@
+id_producto,nombre_producto,categoria,precio,stock
+101,Smartphone XYZ,Tecnología,100.00,50
+102,Camiseta de Algodón,Ropa,25.00,100
+103,Laptop ABC,Tecnología,800.00,30
+104,Sofá Moderno,Hogar,500.00,20
+105,Zapatillas Deportivas,Deportes,60.00,75

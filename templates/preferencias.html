@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecciona tus Preferencias</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Selecciona tus Preferencias</h1>
+    </header>
+    <main>
+        <form action="/preferencias" method="POST">
+            <div class="form-group">
+                <label for="categoria">Categoría de Productos:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Selecciona una categoría</option>
+                    <option value="Tecnología">Tecnología</option>
+                    <option value="Ropa">Ropa</option>
+                    <option value="Hogar">Hogar</option>
+                    <option value="Deportes">Deportes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="precio_min">Precio Mínimo:</label>
+                <input type="number" id="precio_min" name="precio_min" placeholder="Ingresa el precio mínimo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="precio_max">Precio Máximo:</label>
+                <input type="number" id="precio_max" name="precio_max" placeholder="Ingresa el precio máximo" required>
+            </div>
+
+            <button class="cta">
+                <span class="hover-underline-animation">Enviar Preferencias</span>
+                <svg
+                    id="arrow-horizontal"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="10"
+                    viewBox="0 0 46 16"
+                >
+                    <path
+                        id="Path_10"
+                        data-name="Path 10"
+                        d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                        transform="translate(30)"
+                    ></path>
+                </svg>
+            </button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tu Empresa de Comercio Electrónico</p>
+    </footer>
+</body>
+
+</html>

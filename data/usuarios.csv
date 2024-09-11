@@ -1,0 +1,6 @@
+id_usuario,nombre,email,edad,genero,ubicacion
+1,Juan Pérez,juan.perez@example.com,30,M,Argentina
+2,Ana Gómez,ana.gomez@example.com,25,F,Chile
+3,Carlos López,carlos.lopez@example.com,28,M,México
+4,Marta Fernández,marta.fernandez@example.com,35,F,Colombia
+5,Luis Martínez,luis.martinez@example.com,22,M,Perú
